@@ -3,17 +3,18 @@
   <head>
     <title>Nypp</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Carter+One|Lustria" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
   	<nav>
   		<ul>
-  			<li>Home</li>
-  			<li>About</li>
-  			<li>Pup Pals</li>
+  			<li>Home &#128062;</li>
+  			<li>About &#128062;</li>
+  			<li>Pup Pals &#128062;</li>
   		</ul>
   	</nav>
     <%= yield %>
@@ -22,3 +23,4 @@
     </footer>
   </body>
 </html>
+ 
