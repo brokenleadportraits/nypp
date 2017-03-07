@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   get 'static_pages/about'
 
   get 'static_pages/index'
