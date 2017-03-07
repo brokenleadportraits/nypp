@@ -127,3 +127,35 @@ nav {
 			text-align: center;
 		}
 
+
+
+ /*PHOTO PAGE STYLES*/
+
+.photos-header {
+	margin-bottom: 90px;
+
+	h1, h2 {
+	text-align: center;
+	font-family: 'Carter One', cursive;
+	}
+}
+
+#photo-images img {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+.photo-names {
+	text-align: center;
+	font-family: 'Carter One', cursive;
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
+
+.photo-descriptions {
+	text-align: center;
+	font-family: 'Carter One', cursive;
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
