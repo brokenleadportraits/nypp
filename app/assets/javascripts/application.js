@@ -14,3 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// alert("Hello! I am an alert box!!");
+
+      
+
+
+$(window).scroll(function() {    
+var scroll = $(window).scrollTop();
+
+if (scroll >= 190) {
+    $("#fixed-nav").addClass("fixedPos");
+}
+else{
+
+    $("#fixed-nav").removeClass("fixedPos");
+}
+ });

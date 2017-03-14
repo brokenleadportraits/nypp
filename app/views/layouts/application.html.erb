@@ -3,7 +3,8 @@
   <head>
     <title>Nypp</title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Carter+One|Lustria" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Carter+One|Clicker+Script|Lustria|Oranienbaum|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +12,20 @@
 
   <body>
   	<div class="page-body">
-	  	<nav>
+			<div class="index-header">
+				<%= image_tag("logo.jpg") %>
+			</div>
+	  	<nav id="fixed-nav">
 	  		<ul>
-	  			<li>Home &#128062;</li>
-	  			<li>About &#128062;</li>
-	  			<li>Pup Pals &#128062;</li>
-	  			<li>Sign in &#128062;</li>
+	  			<li><%= link_to "Home", static_pages_index_path %>&#128062;</li>
+	  			<li><%= link_to "About", static_pages_about_path %>&#128062;</li>
+	  			<li><%= link_to "Interviews", photos_path %>&#128062;</li>
+	  			<li><%= link_to "Sign In", photos_path %>&#128062;</li>
 	  		</ul>
 	  	</nav>
+
 	    <%= yield %>
+	    
 	    <footer>
 	    	&copy;2017 New York Pup Pals&#128062;
 	    </footer>

@@ -1,26 +1,40 @@
-<p id="notice"><%= notice %></p>
 
-<div class="photos-header">
-  <h1>Latest uploads</h1>
-  <h2>Click a pooch to see more!</h2>
-</div>
-
-  <div class="photo-div">
-    <div class="row" id="photo-images">
-      <% @photos.each do |photo| %>
-        <div class="col-6">
-          <h1 class="photo-names"><%= photo.name %></h1>
-          <%= image_tag(photo.image_url) %>
-          <h2 class="photo-descriptions"><%= photo.description %></h2>
-          <%= link_to 'Show', photo %>
-          <%= link_to 'Edit', edit_photo_path(photo) %>
-          <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-      <% end %>
+<div class="row">
+  <div class="col-12">
+    <div class="nypp-banner">
+      <%= image_tag("interview-banner.png") %>
     </div>
   </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="photos-header">
+      <h1>New York Pup Pal Interviews</h1>
+      <h2>Click a pooch to see more!</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <% @photos.each do |photo| %>
+      <div class="col-3 col-m-4">
+        <div class="photo-div">
+          <%= image_tag(photo.image_url) %>
+          <p><%= photo.description %></p>
+        </div>
+        <%#= link_to 'Show', photo %>
+        <%#= link_to 'Edit', edit_photo_path(photo) %>
+        <%#= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    <% end %>
+  </div>
+
+
+
 <br>
 <br>
 <br>
 
 <%= link_to 'New Photo', new_photo_path %>
+<p id="notice"><%= notice %></p>
