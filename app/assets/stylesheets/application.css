@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+#devise-forms {
+	font-family: 'Carter One', cursive;
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}

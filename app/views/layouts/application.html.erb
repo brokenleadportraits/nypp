@@ -12,6 +12,8 @@
 
   <body>
   	<div class="page-body">
+  		<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
 			<div class="index-header">
 				<%= image_tag("logo.jpg") %>
 			</div>
@@ -20,7 +22,13 @@
 	  			<li><%= link_to "Home", static_pages_index_path %>&#128062;</li>
 	  			<li><%= link_to "About", static_pages_about_path %>&#128062;</li>
 	  			<li><%= link_to "Interviews", photos_path %>&#128062;</li>
-	  			<li><%= link_to "Sign In", photos_path %>&#128062;</li>
+	  			<li>
+	  				<% if user_signed_in? %>
+	  					<%= link_to('logout', destroy_user_session_path, :method => :delete) %>&#128062;
+	  				<% else %>
+	  					<%= link_to('Login', new_user_session_path) %>&#128062;
+	  				<% end %>
+	  			</li>
 	  		</ul>
 	  	</nav>
 
