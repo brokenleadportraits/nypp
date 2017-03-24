@@ -15,20 +15,10 @@
   </div>
 </div>
 
-
-  <div class="row">
-    <% @photos.each do |photo| %>
-      <div class="col-3 col-m-4">
-        <div class="photo-div">
-          <%= image_tag(photo.image_url) %>
-          <p><%= photo.description %></p>
-        </div>
-        <%#= link_to 'Show', photo %>
-        <%#= link_to 'Edit', edit_photo_path(photo) %>
-        <%#= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div>
-    <% end %>
-  </div>
+<!-- RENDERS ALL PHOTOS IN INTERVIEWS FROM PARTIAL "_PHOTO" -->
+<div class="row">
+  <%= render @photos %>
+</div>
 
 
 

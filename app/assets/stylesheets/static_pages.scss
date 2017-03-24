@@ -72,6 +72,7 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	background-color: white;
+		box-shadow: 0 0 50px rgba(0,0,0,0.4); 
 }
 @media only screen and (max-width: 375px) {
 	.page-body {
@@ -153,7 +154,7 @@ nav {
 }
 
 
-/***********INDEX BANNER STYLES***********/
+/***********BANNER STYLES***********/
 .nypp-banner {
 
 	img {
@@ -170,7 +171,6 @@ nav {
 
 
 /*INSTAGRAM DIV STYLES*/
-
 #instagram-div {
 	height: auto;
 	width: 100%;
@@ -189,7 +189,7 @@ nav {
 
 
 
-/**********INDEX IMAGE STYLES**********/
+/****INDEX IMAGE STYLES****/
 #index-images {
 	height: auto;
 	width: 100%;
@@ -212,9 +212,43 @@ nav {
 }
 
 
+/*INDEX SLIDESHOW STYLES*/
+.slideshow-header {
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	margin-top: 40px;
+}
+#slideshow { 
+  margin: 40px auto; 
+  position: relative; 
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.4); 
+}
+
+#slideshow img {
+	margin: 0 auto; 
+	width: 240px; 
+  height: 240px;
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+
+
+
 /*********FOOTER STYLES**********/
 footer {
 	padding: 20px;
+	border-top: 1px solid grey;
+	box-shadow: 20px 20px 20px rgba(0,0,0,0.4); 
 }
 
 
