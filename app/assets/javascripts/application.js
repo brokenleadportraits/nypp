@@ -15,11 +15,21 @@
 //= require turbolinks
 //= require_tree .
 
-// alert("Hello! I am an alert box!!");
-
-      
 
 
+
+// FOR ALERT/NOTICE FADES
+$(document).on('turbolinks:load', function(){
+   $('.alert').delay(500).fadeIn('normal', function() {
+      $(this).delay(2500).fadeOut();
+   });
+   $('.notice').delay(500).fadeIn('normal', function() {
+      $(this).delay(2500).fadeOut();
+   });
+});
+
+
+// FOR FIXED NAV WHEN SCROLL
 $(window).scroll(function() {    
 var scroll = $(window).scrollTop();
 
@@ -33,8 +43,7 @@ else{
  });
 
 
-
-
+// FOR SLIDESHOW ON INDEX
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
@@ -45,3 +54,5 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  3000);
+
+
