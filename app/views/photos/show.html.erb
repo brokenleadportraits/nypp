@@ -1,19 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @photo.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @photo.description %>
-</p>
+<div class="row" id="photo-show-page">
+	<div class="col-6" id="left-side">
+		<h1>|<%= @photo.name %>|</h1>
+		  <%= image_tag(@photo.image_url) %>
+		<p><%= @photo.description %> - <%= @photo.name %></p>
+		<%= link_to 'Back', photos_path %>
+	</div>
+	<div class="col-6" id="comment-section">
+		<h3><%= @photo.name %>'s Average Rating: <div class="rated" data-score="<%= @photo.average_rating %>"></div> </h3>
+		<br>
+		<h1>Show <%= @photo.name %> love with a Comment</h1>
+		<%= render "photos/new_comment" %>
+		<%= render "photos/comments" %>
+	</div>
+</div>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @photo.image_url %>
-</p>
+<%= link_to 'Edit', edit_photo_path(@photo) %> 
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
