@@ -1,0 +1,838 @@
+/* line 6, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination {
+  background: white;
+  cursor: default;
+  margin: 0 auto;
+  text-align: center;
+  /* self-clearing method: */
+}
+
+/* line 12, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 17, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 20, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+
+/* line 26, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+
+/* line 30, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+
+/* line 33, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* line 40, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 44, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 50, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+* html .digg_pagination {
+  height: 1%;
+}
+
+/* line 52, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+
+/* line 55, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+}
+
+/* line 61, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 63, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 65, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 77, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 80, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 83, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default;
+}
+
+/* line 87, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+  padding: 0.2em 0.5em;
+}
+
+/* line 89, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 91, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  color: #ff0084;
+}
+
+/* line 95, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a {
+  border: 1px solid #dddddd;
+  color: #0063dc;
+  text-decoration: none;
+}
+
+/* line 99, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination a:hover, .flickr_pagination a:focus {
+  border-color: #003366;
+  background: #0063dc;
+  color: white;
+}
+
+/* line 103, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .page_info {
+  color: #aaaaaa;
+  padding-top: 0.8em;
+}
+
+/* line 106, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .previous_page, .flickr_pagination .next_page {
+  border-width: 2px;
+}
+
+/* line 108, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .previous_page {
+  margin-right: 1em;
+}
+
+/* line 110, /home/glabes/nypp/app/assets/stylesheets/comments.scss */
+.flickr_pagination .next_page {
+  margin-left: 1em;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /home/glabes/nypp/app/assets/stylesheets/photos.scss */
+#photo-show-page {
+  font-family: 'Lustria', serif;
+  text-align: center;
+}
+
+/* line 10, /home/glabes/nypp/app/assets/stylesheets/photos.scss */
+#left-side img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+/* line 1, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/glabes/nypp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+/* line 7, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* For mobile phones: */
+/* line 21, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+[class*="col-"] {
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablets: */
+  /* line 28, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  /* line 29, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  /* line 30, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-3 {
+    width: 25%;
+  }
+
+  /* line 31, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  /* line 32, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  /* line 33, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-6 {
+    width: 50%;
+  }
+
+  /* line 34, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  /* line 35, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  /* line 36, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-9 {
+    width: 75%;
+  }
+
+  /* line 37, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  /* line 38, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  /* line 39, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1130px) {
+  /* desktop: */
+  /* line 43, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  /* line 44, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-2 {
+    width: 16.66%;
+  }
+
+  /* line 45, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* line 46, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* line 47, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-5 {
+    width: 41.66%;
+  }
+
+  /* line 48, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* line 49, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-7 {
+    width: 58.33%;
+  }
+
+  /* line 50, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-8 {
+    width: 66.66%;
+  }
+
+  /* line 51, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-9 {
+    width: 75%;
+  }
+
+  /* line 52, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-10 {
+    width: 83.33%;
+  }
+
+  /* line 53, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-11 {
+    width: 91.66%;
+  }
+
+  /* line 54, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .col-12 {
+    width: 100%;
+  }
+}
+/* line 60, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 64, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  body {
+    margin: 0 auto;
+  }
+}
+/********PAGE BODY STYLES TO ACHEIVE A CENTERED PAGE ON DESKTOP*******/
+/* line 71, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.page-body {
+  border-style: groove;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 79, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .page-body {
+    width: 100%;
+    padding: 0;
+  }
+}
+/*********NEW YORK PUP PALS LOGO HEADER*********/
+/* line 87, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.index-header {
+  border-bottom: 1px solid grey;
+  position: relative;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 892px) {
+  /* line 95, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .index-header img {
+    height: auto;
+    width: 100%;
+  }
+}
+/************NAV Styles for all devices includes jQuery ****************/
+/* line 104, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+nav {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+/* line 110, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  list-style: none;
+  padding: 1px;
+  text-align: center;
+}
+/* line 115, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+nav li {
+  display: inline-block;
+  margin: 6px 20px;
+  padding: 5px;
+}
+/* line 120, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+nav a {
+  text-decoration: none;
+  font-family: 'Carter One', cursive;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 892px) {
+  /* line 128, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  nav {
+    padding: 25px 0px 25px 0px;
+  }
+
+  /* line 131, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  nav ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 135, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  nav li {
+    padding: 4px;
+    margin: 0 auto;
+  }
+}
+/*jQuery kicks in for fixed position Nav on scroll*/
+/* line 141, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.fixedPos {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 76.3%;
+  margin: 0 auto;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 152, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .fixedPos {
+    width: 100%;
+  }
+}
+/***********BANNER STYLES***********/
+/* line 161, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.nypp-banner img {
+  width: 100%;
+  height: auto;
+}
+/* line 165, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.nypp-banner h2 {
+  font-family: 'Lustria', serif;
+  padding: 40px 4px 20px 4px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/*INSTAGRAM DIV STYLES*/
+/* line 175, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#instagram-div {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 181, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#instagram-div h1 {
+  font-family: 'Pacifico', cursive;
+}
+/* line 185, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#instagram-div img {
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+/****INDEX IMAGE STYLES****/
+/* line 194, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#index-images {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+/* line 199, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#index-images img {
+  width: 100%;
+  height: 700px;
+  padding: 20px;
+}
+/* line 205, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#index-images h2 {
+  font-family: 'Lustria', serif;
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 210, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  #index-images img {
+    height: auto;
+  }
+}
+/*INDEX SLIDESHOW STYLES*/
+/* line 217, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.slideshow-header {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  margin-top: 40px;
+}
+
+/* line 222, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#slideshow {
+  margin: 40px auto;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+/* line 231, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#slideshow img {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+}
+
+/* line 237, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/*********FOOTER STYLES**********/
+/* line 249, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+footer {
+  padding: 20px;
+  border-top: 1px solid grey;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*PHOTO PAGE STYLES*/
+/* line 259, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photos-header {
+  text-align: center;
+  padding: 2px;
+  margin-top: 40px;
+}
+/* line 263, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photos-header h1 {
+  font-family: 'Lustria', serif;
+}
+/* line 267, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photos-header h2 {
+  font-family: 'Oranienbaum', serif;
+}
+
+/* line 273, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photo-div {
+  display: block;
+  height: 370px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 4px;
+}
+/* line 280, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photo-div img {
+  width: 100%;
+  height: auto;
+}
+/* line 285, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+.photo-div p {
+  text-align: center;
+  font-family: 'Lustria', serif;
+  margin: 2px 2px;
+  padding: 2px 2px;
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 293, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+  .photo-div {
+    height: auto;
+    padding: 10px;
+  }
+}
+/*ABOUT STYLES*/
+/* line 301, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-header {
+  text-align: center;
+}
+/* line 304, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-header h1 {
+  font-family: 'Oranienbaum', serif;
+  margin-bottom: 20px 20px;
+  padding: 2px 2px;
+}
+/* line 310, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-header h2 {
+  font-family: 'Pacifico', cursive;
+  padding: 20px;
+}
+/* line 316, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-header h3 {
+  font-family: 'Lustria', serif;
+  padding: 20px;
+}
+
+/* line 323, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-left {
+  text-align: center;
+}
+/* line 326, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-left h1 {
+  font-family: 'Oranienbaum', serif;
+}
+/* line 330, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-left p {
+  font-family: 'Lustria', serif;
+}
+
+/* line 335, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-right {
+  text-align: center;
+}
+/* line 338, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-right h1 {
+  font-family: 'Oranienbaum', serif;
+}
+/* line 342, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-info-right p {
+  font-family: 'Lustria', serif;
+}
+
+/* line 347, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-work {
+  font-family: 'Oranienbaum', serif;
+  text-align: center;
+}
+/* line 351, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-work .fa {
+  font-size: 36px;
+  color: #668cff;
+}
+/* line 355, /home/glabes/nypp/app/assets/stylesheets/static_pages.scss */
+#about-work .fa:hover {
+  color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+#devise-forms {
+	font-family: 'Carter One', cursive;
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}
+
+#user-forms {
+	font-family: 'Carter One', cursive;
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}
+
+#user-table {
+	font-family: 'Carter One', cursive;
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}
+
