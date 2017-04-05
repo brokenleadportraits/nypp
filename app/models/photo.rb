@@ -1,5 +1,6 @@
 class Photo < ApplicationRecord
 	has_many :comments
+	validates :name, presence: true
 
 
 	def highest_rating_comment

@@ -7,4 +7,10 @@
             <p><%= comment.body %></p>
         </div>
     <% end %>
+    <div class="apple_pagination">
+	    <div class="page_info">
+	      <%= page_entries_info @comments %>
+	    </div>
+    	<%= will_paginate @comments, :container => false %>
+  	</div>
 </div>

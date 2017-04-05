@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 # Use Cancan for authroization
 gem 'cancancan', '~> 1.10'
+# Use paginate for pagination on comments
+gem 'will_paginate', '~> 3.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

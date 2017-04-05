@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
   # GET /photos/1
   # GET /photos/1.json
   def show
-    @comments = @photo.comments.order("created_at DESC")
+    @comments = @photo.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
   end
 
   # GET /photos/new
