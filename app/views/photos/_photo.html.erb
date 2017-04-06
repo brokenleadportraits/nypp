@@ -1,9 +1,10 @@
-<div class="col-3 col-m-4">
-	<div class="photo-div">
-	  <%= image_tag(photo.image_url) %>
-	  <p><%= photo.description %></p>
+<%= link_to photo do %>
+	<div class="col-3 col-m-4 col-xs-4">
+		<div class="photo-div">
+		  <%= image_tag(photo.image_url) %>
+		</div>
+			<%#= link_to 'Show', photo %>
+			<%= link_to 'Edit', edit_photo_path(photo) %>
+			<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
 	</div>
-		<%= link_to 'Show', photo %>
-		<%= link_to 'Edit', edit_photo_path(photo) %>
-		<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
+<% end %>
