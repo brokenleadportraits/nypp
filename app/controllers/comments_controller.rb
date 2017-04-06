@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+	load_and_authorize_resource
 
 	def index
 		@comment = @photo.comments.paginate(:page => params[:page], :per_page => 5)
@@ -20,6 +21,10 @@ class CommentsController < ApplicationController
 	end
 
 	def destroy
+		@comment = Comment.find(params[:id])
+		photo = @comment.photo
+		@comment.destroy
+		redirect_to photo
 	end
 
 	private

@@ -2,9 +2,14 @@
     <% @comments.each do |comment| %>
         <div class="row">
             <hr>
-            <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+            <p>
+            <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
+            </p>
             <div class="rated" data-score="<%= comment.rating %>"></div>
             <p><%= comment.body %></p>
+            <% if signed_in? && current_user.admin? %>
+                <p><%= link_to 'Delete Comment', photo_comment_path(comment.photo, comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <% end %>
         </div>
     <% end %>
     <div class="apple_pagination">

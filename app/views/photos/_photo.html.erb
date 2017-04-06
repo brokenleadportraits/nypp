@@ -3,8 +3,9 @@
 		<div class="photo-div">
 		  <%= image_tag(photo.image_url) %>
 		</div>
-			<%#= link_to 'Show', photo %>
-			<%= link_to 'Edit', edit_photo_path(photo) %>
-			<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% if signed_in? && current_user.admin? %>
+				<%= link_to 'Edit', edit_photo_path(photo) %>
+				<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
 	</div>
 <% end %>

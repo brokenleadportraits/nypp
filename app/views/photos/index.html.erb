@@ -15,6 +15,11 @@
   </div>
 </div>
 
+<% if signed_in? && current_user.admin? %>
+  <p><%= link_to 'New Photo', new_photo_path %></p>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
 <!-- RENDERS ALL PHOTOS IN INTERVIEWS FROM PARTIAL "_PHOTO" -->
 <div class="row">
   <%= render @photos %>
@@ -22,9 +27,3 @@
 
 
 
-<br>
-<br>
-<br>
-
-<%= link_to 'New Photo', new_photo_path %>
-<p id="notice"><%= notice %></p>

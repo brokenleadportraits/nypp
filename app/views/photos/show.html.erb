@@ -3,10 +3,14 @@
 
 <div class="row" id="photo-show-page">
 	<div class="col-6" id="left-side">
-		<h1>|<%= @photo.name %>|</h1>
-		  <%= image_tag(@photo.image_url) %>
+		<h1>| <%= @photo.name %> |</h1>
+		<%= image_tag(@photo.image_url) %>
 		<p><%= @photo.description %> - <%= @photo.name %></p>
-		<%= link_to 'Back', photos_path %>
+		<p><%= link_to 'Back', photos_path %>
+			<% if signed_in? && current_user.admin? %>
+				<%= link_to 'Edit', edit_photo_path(@photo) %> 
+			<% end %>
+		</p>
 	</div>
 	<div class="col-6" id="comment-section">
 		<h3><%= @photo.name %>'s Average Rating: <div class="rated" data-score="<%= @photo.average_rating %>"></div> </h3>
@@ -16,6 +20,4 @@
 		<%= render "photos/comments" %>
 	</div>
 </div>
-
-<%= link_to 'Edit', edit_photo_path(@photo) %> 
 
