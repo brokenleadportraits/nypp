@@ -136,6 +136,7 @@ nav {
 		font-family: 'Carter One', cursive;
 		font-size: 1.2em;
 		letter-spacing: 1px;
+		padding: 6px;
 	}	
 }
 @media only screen and (max-width: 892px) {
@@ -150,17 +151,29 @@ nav {
 		padding: 4px;
 		margin: 0 auto;
 	}
+	nav a {
+		padding: 0px;
+	}
+
+}
+/*on hover jquery li*/
+.newLi a {
+	background-color: grey;
+	border-radius: 25px;
+	color: white;
+	padding: 6px;
 }
 /*jQuery kicks in for fixed position Nav on scroll*/
 .fixedPos{
-    position: fixed;
-    left: 0;
-    right: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	width: 76.3%;
 	margin: 0 auto;
-    top: 0;
-    background-color: white;
-    border-bottom: 1px solid grey;
+	background-color: white;
+	border-bottom: 1px solid grey;
+	z-index: 1;
 }
 @media only screen and (max-width: 375px) {
 	.fixedPos {
